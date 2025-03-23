@@ -1,0 +1,169 @@
+/* Limitar ancho de contenido */
+.content-wrapper {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Fondo del encabezado */
+header.back {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+}
+
+/* Foto de perfil */
+.profile-photo {
+    width: 210px;
+    border-radius: 15%;
+    border: 3px solid #333;
+}
+
+/* Iconos sociales */
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+/* Títulos */
+h3 {
+    color: #22D4FD;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Listas de contenido */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #FFD700;
+}
+
+/*boton de fotos*/
+/* Estilos de los iconos sociales */
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+    text-decoration: none; /* Eliminar el subrayado en todos los enlaces */
+}
+
+/* Efecto de zoom en el hover para todos los iconos */
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo específico para el botón de fotos */
+.photos-btn {
+    font-weight: bold;
+    font-size: 1.3rem;
+    animation: colorBlink 1.5s infinite;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Icono de cámara y texto alineados */
+.photos-btn i {
+    margin-right: 5px;
+}
+
+/* Animación de parpadeo con colores cambiantes */
+@keyframes colorBlink {
+    0% { color: #FFD700; }    /* Dorado */
+    25% { color: #FF6347; }   /* Rojo Tomate */
+    50% { color: #00FA9A; }   /* Verde Menta */
+    75% { color: #1E90FF; }   /* Azul Dodger */
+    100% { color: #FFD700; }  /* Vuelve al dorado */
+}
+
+
+
+
+ /* Estilos de la galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de ampliación al pasar el cursor */
+.gallery img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Añade una sombra más fuerte */
+}
+
+/*palillos*/
+
+/* Animación de parpadeo */
+@keyframes blinking {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Aplicación de la animación de parpadeo */
+.blinking {
+    font-size: 2rem; /* Tamaño grande para el emoji, ajústalo según prefieras */
+    animation: blinking 1.2s infinite;
+}
+
+
+/*lenguaje secketor*/
+/*language btn*/
+
+.language-selector {
+    position: fixed; /* Cambiar según necesidad */
+    top: 15px;
+    right: 15px;
+    background-color: #f8f8f8;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .language-selector button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+  }
+  
+  .language-selector button:focus {
+    outline: none;
+  }
+  .language-selector button:hover{
+    animation: hue 1.5s linear infinite;
+  }
